@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins' ,sans-serif;
+    scroll-behavior: smooth;
+    
+ }
+ P{
+    font-weight: 300;
+    color:#111;
+ }
+
+
+ .banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(154, 154, 233, 0.7) ), url(images/111.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+ }
+ .banner .content {
+    max-width: 900px;
+    text-align: center;
+ }
+ .banner .content h2{
+    font-size: 3em;
+    color: #ff6600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .banner .content h2 span{
+   text-shadow: 0 5px 20px rgba(236, 236, 241, 0.5);
+ }
+ 
+ .banner .content p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#FFF;
+    text-shadow: 0 3px 20px rgba(229, 228, 236, 0.5);
+ }
+ .btn {
+    font-size: 1,5em;
+    color:#02274b;
+    background:#ff6600;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: .5s;
+ }
+ .btn:hover {
+    letter-spacing: 6px;
+    font-size: 1.5em;
+    font-weight: bold;
+ }
+ header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 80px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .8s;
+ }
+ header.sticky {
+    background: #fff;
+    padding: 10px 70px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0,0.5);
+ }
+
+ header img {
+    width: 100px;
+    filter: invert(1);
+    
+ }
+ header .Logo {
+    text-decoration: none;
+    
+    
+ }
+
+ header .Navigation {
+    position: relative;
+    display: flex;
+ }
+ header .Navigation li {
+    list-style: none;
+    margin-left: 30px;
+ }
+ header .Navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+ }
+ header.sticky .Navigation li a {
+    color:#02274b;
+ }
+ header.sticky img {
+  filter: none;
+ }
+ header .Navigation li a:hover {
+    color:#ff6600;
+ }
+ .profile_image {
+   width: 200px;
+   height: 200px;
+   margin: 0px;
+ 
+ }
+
+ section {
+   padding: 100px;
+ }
+ .row {
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .row .col150 {
+   position: relative;
+   width: 100%;
+ }
+ .titleText {
+   color: #02274b;
+   font-size: 2em;
+   font-weight: 300;
+   margin-bottom: 5%;
+ }
+ .titleText span {
+   color: #ff6600;
+   font-weight: 700;
+   font-size: 1.5em;
+ }
+ .row .col150 {
+  height: 100vh;
+ }
+ .row .col150 .imgBx {
+   position: relative;
+   width: 100%;
+   /* min-height:300px */
+   height: 100%;
+   
+ }
+ .row .col150 .imgBx img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 90%;
+   height: 70%;
+   object-fit:cover;
+   border:10px solid #fcf8f6 ;
+   border-radius: 15px;
+   box-shadow: 5px 10px 10px rgba(9, 65, 102, 0.5);
+  
+ }
+
+ .row .col150 .imgBx img:hover {
+  transform: scale(-1.1,1.1);
+  transition: all .9s ease-in-out;
+  box-shadow: 2px 2px 20px #ff6600;
+}
+ .row .col150 p {
+   line-height: 350%;
+   font-weight: 400;
+   margin-right: 30px;
+   margin-top: 50px;
+ }
+ .app{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(189, 168, 168, 0.7),rgba(235, 235, 255, 0.7) );
+ }
+ .app .titleText {
+   text-align: center;
+  
+ }
+ .app .content {
+   display: flex;
+   justify-items: center;
+   align-items:center;
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin-top: 40px;  
+ }
+ .app .content .box {
+  position: relative;
+   width: 340px;
+   margin: 10px;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 10px 20px rgba(9, 65, 102, 0.5);;
+   height: 100%;
+   z-index: 1;
+ }
+ .app .content .box  .imgBx {
+   position: relative;
+   width: 100%;
+   height: 300px;
+   border-radius: 5px;
+   box-shadow: 0 10px 20px rgba(9, 65, 102, 0.5);;
+ }
+ .app .content .box .imgBx img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border: 10px solid rgb(241, 241, 218) ;
+   border-radius: 15px;
+ }
+ .app .content .box:hover {
+  transform: scale(1.2);
+  
+ }
+ .app .content .box img:hover {
+  box-shadow: 1px 1px 10px #ff6600;
+ }
+ .app .content .box .text {
+   padding: 15px 0 5px;
+ }
+ .app .content .box .text{
+   font-weight: 400;
+   color: #e7ecf0;
+   text-align: center;
+   background:linear-gradient(rgba(83, 82, 82, 0.7),rgba(157, 157, 189, 0.7) );
+   background-size: cover;
+   border-radius: 5px;
+   margin-top: 20px;
+ }
+
+ /* --------------------------------------------Features-------------------------------------- */
+.cell {
+  background:linear-gradient(rgba(21, 18, 56, 0.9),rgba(29, 31, 53, 0.89),rgb(15, 10, 43) );
+  margin-top: 50px;
+}
+.all_Features {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  
+}
+
+.Features {
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 4px;
+  /* width: 12in; */
+  width: 50%;
+  font-size: 20px;
+  animation: lightShadow 3s infinite linear;
+  margin: 50px auto;
+  
+}
+
+@keyframes lightShadow {
+
+  0%,
+  100% {
+    box-shadow: 0 3px 20px #02274b;
+  }
+
+  33% {
+    box-shadow: 0 3px 20px #02274b;
+  }
+
+  33%,
+  66% {
+    box-shadow: 0 3px 10px #ccd4dd;
+  }
+
+  66% {
+    box-shadow: 0 3px 20px #ccd4dd;
+  }
+
+  66%,
+  99% {
+    box-shadow: 0 3px 10px #1d125a;
+  }
+
+  99% {
+    box-shadow: 0 3px 20px #d87c13;
+  }
+}
+
+
+
+.Features h2 {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  /* Note: You have text-align center mentioned twice. I'm keeping it as per your provided style. */
+  /* float: left; */
+  color: #e9ecf0;
+  margin: 30px;
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] ,input[type="email"] ,input[type="tel"] ,textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  color: #02274b;
+}
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 900;
+}
+input::file-selector-button {
+  color: #fff;
+  background:#02274b;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  transition: .5s;
+  font-size: 1em;
+}
+input[type="submit"] {
+  color: #fff;
+  background:#02274b;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 10px;
+  transition: .5s;
+  font-size: 1em;
+}
+input[type="submit"]:hover {
+  font-size: 1.2em;
+  background: #ff6600;
+  
+}
+
+.Features h6 {
+  align-items: center;
+  font-size: 30px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.Features p {
+  align-items: center;
+  font-size: 20px;
+  color: rgb(167, 167, 167);
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titleText {
+ text-align: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ 
+ }
+ .container .left{
+   position: relative;
+   width: 50%;
+   line-height: 350%;
+   font-size: 1.5em;
+   margin-right: 30px;
+   height:100%;
+   
+ }
+ .container .right{
+  position: relative;
+  width: 45%;
+  height: 100%;
+  
+}
+.right label {
+  display: block;
+}
+ .right button {
+  color: #fff;
+  background:#02274b;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  margin-left: 80%;
+  border-radius: 10px;
+  transition: .5s;
+  font-size: 1.5em;
+ }
+ .right button:hover {
+  font-size: 1.2em;
+  background: #ff6600;
+  
+}
+
+@media (max-width:991px) {
+  header ,
+  header.sticky {
+    padding: 10px 20px;
+  }
+.content  h2 img {
+ display: none;
+}
+  header .Navigation {
+    display: none;
+  }
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background:url(images/menu.png) ;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+  }
+  .menuToggle.active {
+    background:url(images/clos.png) ;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header.sticky .menuToggle {
+    filter:none;
+  }
+  header .Navigation.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:68px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+  }
+  header .Navigation li{
+    margin-left: 0;
+  }
+
+  header .Navigation li a {
+    color: #02274b;
+    font-size: 1.6em;
+    
+  }
+  .row {
+    flex-direction: column;
+  }
+  .row .col150 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .row .col150 .imgBx {
+   
+    height: 300px;
+    margin-top: 20px;
+  }
+  .titleText {
+    margin-bottom: 2%;
+  }
+  .app .content .box {
+     width: 100%;
+     margin: 20px;
+     padding: 20px;
+   }
+   .row .col150 .imgBx img {
+   width: 100%;
+   height: 100%;
+   }
+  .row .col150 p {
+   line-height: 250%;
+   margin-right: 0;
+   margin-top: 20px;
+ }
+ .Features {
+  width: 100%;
+  font-size: 1em;  
+}
+input[type="text"] ,input[type="email"] ,input[type="tel"] ,textarea {
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+.container {
+  display: block;
+ 
+ }
+ .container .left{
+   width: 100%;
+   font-size: 1.2em;
+   margin-left: 30px;
+   height: 30%;
+ }
+ .container .right{
+  width: 100%;
+  margin-top: 100px;
+ 
+}
+
+}

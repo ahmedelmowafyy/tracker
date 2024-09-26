@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="images/Logo.svg" href="images/Logo.svg"  >
+</head>
+<body>
+    <header>
+        
+        <a href="#" class="Logo"><img src="images/Logo.svg"  alt="Logo Image" /></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="Navigation" onclick="toggleMenu()"> 
+           <li><a href="#">Home</a></li> 
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <!--<a class="topmenu" href="#home">About</a>-->
+          <li><a href="#real-about">About</a></li>
+          <li><a href="#App">App Demonstration</a></li>
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2><img src="images/Logo.svg" class="profile_image" alt="Logo Image" /><span>YOU CAN START!</span> </h2>
+            
+                
+              
+            <p> FIND THE RIGHT PERSON IN FASTEST TIME ,Some Campanies receive hundreds or even thousands of Applications for 
+                each jop posting . hiring managers often find it challenging to read and consider that many Application 
+                especialy scince they frequantly recruit formpre
+                 than one position at a time  </p>
+                <a class="btn" href="#">Our menu</a>
+        </div>
+    </section>
+      <!-- ______________________________________________real-about__________________________________________________ -->
+    <section id="real-about">
+        
+          <div class="row">
+            <div class="col150">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Do you know, the top fortune 500 companies receive up to 2
+                    million job applications every year?
+                    That means, even if your resume passes the ATS (Application
+                    Tracking System), it still has to go through mighty HR. With
+                    thousands of resumes to go through, how does HR select
+                    candidates for an interview?
+                    HR professionals use a process called resume scanning,also known
+                    as applicant tracking system (ATS) screening, to review and
+                    evaluate resumes submitted for job applications. This process is
+                    designed to quickly identify the most qualified candidates for the
+                    job while filtering out unqualified or irrelevant applications.</p>
+            </div>
+            <div class="col150">
+                <div class="imgBx">
+                    <img src="images/9.jpg" >
+                </div>
+            </div>
+          </div>
+          
+      </section>
+        <!-- ______________________________________________Application Demonstration__________________________________________________ -->
+      <section id="App" class="app">
+        <div class="title">
+            <h2 class="titleText">How Cv <span>T</span>racker Work ?</h2>
+        </div>
+        <div class="content">
+            
+
+            <Div class="box">
+                <div class="imgBx">
+                    <img src="images/1.jpg" >
+                </div>
+                <div class="text">
+                    <h3>Aim</h3>
+                    <p id="app-p">Applicant Tracking System streamlines your
+                        hiring process so you can find the right person, in
+                        half the time.</p>
+                </div>
+            </Div>
+            <Div class="box">
+                <div class="imgBx">
+                    <img src="images/2.jpg" >
+                </div>
+                <div class="text">
+                    <h3>description</h3>
+                    <p id="app-p">Search and filter options: To refine the cv</p>
+                </div>
+            </Div>
+            <Div class="box">
+                <div class="imgBx">
+                    <img src="images/3.jpg" >
+                </div>
+                <div class="text">
+                    <h3>security</h3>
+                    <p id="app-p">- Ensure that the application handles CV data
+                        with proper security and complies with data
+                        privacy regulations.</p>
+                </div>
+            </Div>
+            <Div class="box">
+                <div class="imgBx">
+                    <img src="images/4.jpg" >
+                </div>
+                <div class="text">
+                    <h3>Fast</h3>
+                    <p id="app-p"> With Tracker, employers can
+                        optimize their hiring process and fill job positions
+                        faster.</p>
+                </div>
+            </Div>
+        </div>
+      </section>
+    
+
+  
+     <!-- _________________________________________Features________________________________________ -->
+  
+    <section id="Features" class="cell">
+      
+  
+      <div class="all_Features"></div>
+      <div class="Features">
+        <!-- <h1>Resume Filter</h1> -->
+        <h2>Single File Upload</h2>
+        <form action="/filter_single" method="post" enctype="multipart/form-data">
+            <label for="keywords">Keywords (separated by space):</label><br>
+            <input type="text" id="keywords" name="keywords" placeholder="Keywords..."><br>
+            <label for="resume">Upload Resume (PDF or DOCX):</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.docx" value="choise"><br>
+            <input type="submit" value="Filter Resumes">
+        </form>
+  
+        
+      </div>
+      
+      <div class="Features">
+        <h2>Multiple File Upload</h2>
+        <form action="/filter_multiple" method="post" enctype="multipart/form-data">
+            <label for="keywords">Keywords (separated by space):</label><br>
+            <input type="text" id="keywords" name="keywords" placeholder="Keywords..."><br>
+            <label for="resumes">Upload Resumes (PDF or DOCX, multiple files allowed):</label><br>
+            <input type="file" id="resumes" name="resumes" accept=".pdf,.docx" multiple value="Filter Resume"><br>
+            <input type="submit" value="Filter Resumes">
+        </form>
+      </div>
+    </section>
+  
+    <div class="iconbutton">
+      <a href="#">
+        <img src="images/icon button.png" alt="Logo" width="50px">
+      </a>
+    </div>
+    <!-- ________________________________________________contact_________________________________________________________-->
+    <section id="contact">
+        
+            <h2 class="titleText"><span>C</span>ontacts</h2></div>
+            
+        <div class="container">
+            <div class="left">
+                <h1 id="h1-contact">Let's Chat</h1>
+                <p id="p1">Whether you have a question, want to start a project or simply want to connect.
+                Feel free to send us a message in the contact form</p>
+                </div>
+            <div class="right">
+                <div class="around-form">
+                    <form action="#">
+                        <label>*required</label>
+                        <input type="text" placeholder="Name *" required>
+                        <input type="email" placeholder="Email *" required>
+                        <input type="text" placeholder="Company">
+                        <input type="tel" placeholder="Phone">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    </section> 
+            
+  
+        
+        
+      
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky" ,window.scrollY>0);
+        });
+
+        function toggleMenu(){
+            const menuToggle =document.querySelector('.menuToggle');
+            const Navigation =document.querySelector('.Navigation');
+            menuToggle.classList.toggle('active');
+            Navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
